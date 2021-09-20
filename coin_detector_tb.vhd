@@ -63,12 +63,14 @@ end process;
 stim:process
 begin
 
--- 1 Rs, 5 Rs, and 2 Rs in channel    
+-- Reset    
     Reset1 <= '1';
     wait for 20 ns;
     Reset1 <= '0';
     wait for 20ns;
-    
+
+-- 1 Rs, 5 Rs, and 2 Rs in channel  
+            
     Z1 <= '1';
     wait for 2ns;
     Z1 <= '0';
